@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Layout2" >
+
+    <EditText
+        android:id="@+id/spass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Enter Staff Id"
+        android:inputType="textEmailAddress">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/stuid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spass"
+        android:layout_below="@+id/spass"
+        android:ems="10"
+        android:hint="Enter password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/stu_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stuid"
+        android:layout_below="@+id/stuid"
+        android:layout_marginTop="23dp"
+        android:hint="Login"
+        android:text="Login" />
+
+</RelativeLayout>
